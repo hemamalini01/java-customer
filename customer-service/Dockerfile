@@ -10,5 +10,5 @@ RUN chmod +x gradlew
 RUN ./gradlew build -x test \
     && cp ./build/libs/customer-service-0.0.1-SNAPSHOT.jar customer-service-0.0.1-SNAPSHOT.jar
 
-EXPOSE 8074 
+EXPOSE 8075 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","./customer-service-0.0.1-SNAPSHOT.jar"]
